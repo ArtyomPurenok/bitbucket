@@ -1,7 +1,6 @@
 .header {
     width: 100%;
     height: 80px;
-    position: absolute;
     display: flex;
     justify-content: space-between;
 
@@ -30,7 +29,6 @@
 
         & input {
             width: 100%;
-            height: 20px;
             margin: auto;
         }
     }

@@ -1,0 +1,12 @@
+.registries_table {
+
+    & button {
+        width: 20px;
+    }
+    & th {
+        border: 1px solid black;
+    }
+    & td {
+        border: 1px solid green;
+    }
+}
