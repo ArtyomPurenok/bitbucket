@@ -1,0 +1,33 @@
+.registry-news {
+    padding: 80px 115px;
+    background-color: rgb(229, 229, 229);
+
+    &_cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_title {
+        font-size: 36px;
+    }
+
+    &_pagination {
+        text-align: center;
+        
+        & button {
+            width: 270px;
+            height: 56px;
+            border-color: transparent;
+            border-radius: 5px;
+            background-color: rgba(0, 156, 180, 1);
+            color: white;
+            font-size: 18px;
+            font-weight: 700;
+
+            &:active {
+                background-color: rgba(0, 156, 180, 0.671);
+            }
+        }
+    }
+}
