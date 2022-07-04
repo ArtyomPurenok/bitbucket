@@ -1,0 +1,106 @@
+.header {
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+
+    &_logo-seach {
+        display: flex;
+    }
+
+    &_logo {
+        width: 180px;
+        height: 40px;
+        margin: 20px 0px 20px 115px;
+        border: none;
+        background-color: transparent;
+    }
+
+    &_seach {
+        width: 270px;
+        height: 48px;
+        background: rgba(249, 249, 251, 1);
+        margin: auto 0px auto 30px;
+        display: flex;
+
+        & svg {
+            margin: auto 5px;
+        }
+
+        & input {
+            width: 100%;
+            height: 20px;
+            margin: auto;
+        }
+    }
+
+    &_notification-user-calendar {
+        height: 48px;
+        margin: auto;
+        margin-right: 115px;
+        display: flex;
+    }
+
+    &_calendar {
+        width: 48px;
+        height: 48px;
+        margin: 0px 10px;
+        background: rgba(249, 249, 251, 1);
+        border-radius: 50%;
+        display: flex;
+
+        & svg {
+            margin: auto;
+        }
+    }
+
+    &_notification {
+        width: 48px;
+        height: 48px;
+        margin: 0px 10px;
+        background: rgba(249, 249, 251, 1);
+        border-radius: 50%;
+        display: flex;
+        flex-direction: row-reverse;
+
+        & svg {
+            margin: auto;
+        }
+
+        &--number {
+            width: 18px;
+            height: 18px;
+            background: rgba(0, 156, 180, 1);
+            position: absolute;
+            border-radius: 50%;
+            text-align: center;
+            font-size: 13px;
+        }
+    }
+
+    &_user {
+        margin: 0px 10px;
+        padding: 0px 20px;
+        display: flex;
+        border-left: 1px solid rgba(244, 243, 245, 1);
+
+        &--img {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+        }
+
+        &--name {
+            margin: auto;
+            margin-left: 10px;
+        }
+
+        &--arrow {
+            margin: 0px 10px;
+            border: none;
+            background-color: transparent;
+        }
+    }
+}
+
