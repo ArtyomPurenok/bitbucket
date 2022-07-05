@@ -1,0 +1,78 @@
+.authorization {
+    padding: 80px 115px;
+
+    &_title {
+
+        & h1 {
+            text-align: center;
+        }
+    }
+
+    &_main {
+        // background-color: yellow;
+        width: 450px;
+        margin: 0px auto;
+
+        &--button {
+            width: 100%;
+            height: 56px;
+            margin: 20px 0px;
+            border-radius: 5px;
+            border-color: transparent;
+            background-color: rgba(0, 156, 180, 1);
+        }
+
+        &--password-reset {
+            text-align: center;
+            margin: 0px;
+            color: rgba(0, 156, 180, 1);
+        }
+    }
+
+    &_memory {
+        display: flex;
+        height: 20px;
+        margin-top: 20px;
+        align-items: center;
+
+        & button {
+            height: 20px;
+            width: 20px;
+            margin-right: 10px;
+            padding: 0px;
+            background-color: white;
+
+            & svg {
+                width: 80%;
+
+                & path {
+                    fill: green;
+                }
+            }
+        }
+    }
+
+    &_additional-authorization {
+        width: 448px;
+        margin: 40px auto;
+
+        &--ec, &--msi {
+            width: 100%;
+            padding: 20px 0px;
+            text-align: center;
+            border: 2px solid rgba(237, 237, 244, 1);
+
+
+        }
+    }
+
+    &_create {
+        width: 450px;
+        margin: 40px auto;
+        text-align: center;
+
+        & p {
+            margin: 0px;
+        }
+    }
+}
