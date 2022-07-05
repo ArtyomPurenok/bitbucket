@@ -1,0 +1,64 @@
+.questions {
+    padding: 80px 115px;
+    display: flex;
+}
+
+.one, .two, .three, .four, .five, .six, .seven {
+    &_button {
+        width: 440px;
+        height: 30px;
+        margin: 10px 0px;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        border: none;
+        background-color: transparent;
+
+        & svg {
+            width: 15px;
+            margin: auto 15px;
+        }
+
+        &-open svg {
+            transform: rotate(45deg);
+        }
+    }
+
+    &_open {
+        padding-left: 50px;
+        display: block;
+        width: 400px;
+    }
+
+    &_close{
+        display: none;
+    }
+}
+
+// .two {
+//     &_button {
+//         width: 400px;
+//         height: 30px;
+//         display: flex;
+//         align-items: center;
+
+//         & svg {
+//             width: 15px;
+//             margin: auto 5px;
+//         }
+
+//         &-open svg {
+//             transform: rotate(45deg);
+//         }
+//     }
+
+//     &_open {
+//         padding-left: 50px;
+//         display: block;
+//         width: 400px;
+//     }
+
+//     &_close{
+//         display: none;
+//     }
+// }

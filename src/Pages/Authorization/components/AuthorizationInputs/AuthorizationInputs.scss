@@ -1,0 +1,16 @@
+.authorization-inputs {
+
+    & p {
+        margin: 5px 0px;
+    }
+
+    & input {
+        width: 430px;
+        height: 56px;
+        font-size: 14px;
+        padding-left: 18px;
+        border: transparent;
+        border-radius: 5px;
+        background-color: rgba(246, 246, 249, 1);
+    }
+}

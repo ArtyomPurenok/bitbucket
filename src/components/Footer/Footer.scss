@@ -1,0 +1,99 @@
+.footer {
+    padding: 80px 115px;
+
+    &_data {
+        display: flex;
+        justify-content: space-between
+    }
+
+    &_logo-information {
+        
+        & svg {
+            width: 170px;
+            height: 40px;
+        }
+
+        &--information {
+            font-size: 14px;
+        }
+    }
+
+    &_developer {
+
+        & h1 {
+            font-size: 16px;            
+        }
+
+        &--name {
+            font-size: 14px;
+        }
+
+        &--address {
+            font-size: 14px;
+        }
+    }
+
+    &_information {
+        display: flex;
+        flex-direction: column;
+
+        & button {
+            font-size: 14px;
+            text-align: left;
+            border: none;
+            background-color: transparent;
+            padding: 5px 0px;
+        }
+
+        & h1 {
+            font-size: 18px;
+            padding: 10px 0px;
+        }
+
+    }
+
+    &_support {
+
+        & h1 {
+            font-size: 18px;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+
+        &--work-time {
+            width: 270px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid green;
+        }
+    }
+
+    &_contacts {
+
+        & h1 {
+            font-size: 18px;
+        }
+
+        & p {
+            font-size: 14px;
+        }
+
+        & button {
+            font-size: 14px;
+            text-align: left;
+            border: none;
+            background-color: transparent;
+            padding: 5px 0px;
+            color: rgba(0, 156, 180, 1);
+        }
+    }
+
+    &_rights {
+        margin-top: 40px;
+        padding: 20px 0px;
+        text-align: center;
+        border-top: 2px solid rgba(198, 198, 198, 1);
+        color: rgba(198, 198, 198, 1);
+    }
+}
