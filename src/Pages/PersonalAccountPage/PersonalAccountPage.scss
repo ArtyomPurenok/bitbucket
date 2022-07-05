@@ -1,0 +1,18 @@
+.personal-account {
+    padding: 80px 115px;
+
+    &_tabs {
+        display: flex;
+        flex-direction: column;
+        margin-right: 130px;
+
+        & button {
+            width: 270px;
+            height: 70px;
+        }
+    }
+
+    &_main {
+        display: flex;
+    }
+}

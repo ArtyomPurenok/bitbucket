@@ -6,12 +6,14 @@ import {Header} from './components/Header'
 import {MainPage} from './Pages/MainPage'
 import {Footer} from './components/Footer'
 import {Authorization} from './Pages/Authorization'
+import {PersonalAccountPage} from './Pages/PersonalAccountPage'
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <Authorization/>
+      <PersonalAccountPage/>
+      {/* <Authorization/> */}
       {/* <MainPage/> */}
       <Footer/>
     </div>

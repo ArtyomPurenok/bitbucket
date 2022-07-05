@@ -1,0 +1,21 @@
+.my-data {
+
+    &_inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &_password {
+
+        &--inputs {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &_save {
+        width: 270px;
+        height: 56px;
+    }
+}
