@@ -1,0 +1,30 @@
+.documents {
+    padding: 80px 115px;
+
+    &_table {
+        border: 1px solid black;
+        width: 100%;
+
+        & td {
+            border: 1px solid black;
+            padding: 10px 80px 10px 0px;
+        }
+    }
+}
+
+.aa {
+    width: 170px;
+}
+
+.ab {
+    width: 390px;
+}
+
+.ac {
+    width: 70px;
+}
+
+
+.ae {
+    width: 131px;
+}

@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit"
-import { registryFetch } from "../../thunkAction/registriesFetch";
+import { documentsFetch } from "../../thunkAction/documentsFetch";
 
 const initialState: any = {
     data: null,
@@ -7,19 +7,19 @@ const initialState: any = {
     isLoading: false,
 }
 
-const registries: any = createSlice({
-    name: 'Registry data',
+const documentsDataServer: any = createSlice({
+    name: 'Documents data',
     initialState,
     extraReducers: {
-        [registryFetch.pending]: (state: any) => {
+        [documentsFetch.pending]: (state: any) => {
             state.isLoading = true;
         },
-        [registryFetch.fulfilled]: (state: any, action: PayloadAction<any>) => {          
+        [documentsFetch.fulfilled]: (state: any, action: PayloadAction<any>) => {            
             state.data = action.payload;
             state.error = null;
             state.isLoading = false;
         },
-        [registryFetch.rejected]: (state: any, action: any) => {
+        [documentsFetch.rejected]: (state: any, action: any) => {
             state.isLoading = false;
             state.error = action.error.message;
         },
@@ -27,5 +27,5 @@ const registries: any = createSlice({
     reducers: {},
 })
 
-export const {} = registries.actions
-export default registries.reducer
+export const {} = documentsDataServer.actions
+export default documentsDataServer.reducer
