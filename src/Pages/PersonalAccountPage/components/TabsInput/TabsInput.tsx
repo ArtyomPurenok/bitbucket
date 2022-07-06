@@ -4,14 +4,16 @@ import './TabsInput.scss'
 import { Input } from "../../../../components/Input"
 
 type InputProps = {
-    name?: string
+    title?: string
     placeholder?: string
     type?: string
+    value?: string
+    name?: string
 }
 
-export const TabsInput = ({name, placeholder, type}: InputProps) => {
+export const TabsInput = ({title, placeholder, type, value, name}: InputProps) => {
     return <div className="tabs-input">
-        <p>{name}</p>
-        <Input type={type} placeholder={placeholder}/>
+        <p>{title}</p>
+        <Input name={name} value={value} type={type} placeholder={placeholder}/>
     </div>
 }

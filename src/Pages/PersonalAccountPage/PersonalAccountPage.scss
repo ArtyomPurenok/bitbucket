@@ -1,18 +1,67 @@
 .personal-account {
     padding: 80px 115px;
 
+    &_title {
+
+        & h1 {
+            font-size: 38px;
+            margin-top: 0px;
+        }
+    }
+
     &_tabs {
         display: flex;
         flex-direction: column;
         margin-right: 130px;
 
+        &--button-up {
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        &--button-down {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            color: red !important;
+
+            & svg path {
+                fill: red;
+            }
+        }
+
         & button {
             width: 270px;
             height: 70px;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(237, 237, 244);
+            color: rgba(103, 106, 113, 1);
+            background-color: transparent;
+
+            &:hover {
+                border: 1px solid rgb(177, 177, 177);
+            }
+
+            & svg {
+                margin: auto 17px;
+                width: 18px;
+                height: 25px;
+            }
         }
     }
 
     &_main {
         display: flex;
+    }
+}
+
+.tabs-button-active {
+    border-color: rgba(0, 156, 180, 1) !important;
+    border-radius: 5px !important;
+    color: rgba(0, 156, 180, 1) !important;
+
+    & svg path {
+        fill: rgba(0, 156, 180, 1);
     }
 }

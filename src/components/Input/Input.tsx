@@ -6,10 +6,12 @@ type InputProps = {
     placeholder?: string
     Icon?: any
     type?: string
+    value?: string
+    name?: string
 }
 
-export const Input = ({className, onChange, placeholder, Icon, type}: InputProps) => {
-    return <input type={type} className={className} onChange={onChange} placeholder={placeholder}>
+export const Input = ({className, onChange, placeholder, Icon, type, value, name}: InputProps) => {
+    return <input name={name} value={value} type={type} className={className} onChange={onChange} placeholder={placeholder}>
         {Icon && <Icon height='100%'/>}
     </input>
 }

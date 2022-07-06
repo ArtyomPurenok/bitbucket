@@ -1,5 +1,19 @@
 .authorization-inputs {
 
+    &_input-icon {
+        display: flex;
+
+        & svg {
+            width: 20px;
+            height: 20px;
+            margin: auto 12px;
+        }
+    }
+
+    &:hover {
+        color: rgba(0, 156, 180, 1);
+    }
+
     & p {
         margin: 5px 0px;
     }
@@ -9,8 +23,26 @@
         height: 56px;
         font-size: 14px;
         padding-left: 18px;
-        border: transparent;
+        outline: none;
+        border: 2px solid transparent;
         border-radius: 5px;
         background-color: rgba(246, 246, 249, 1);
+
+        &:focus {
+            border: 2px solid rgba(0, 156, 180, 1);
+            color: black;
+        }
+    }
+
+    &_error {
+
+        & input {
+            border: 2px solid red;
+            color: red;
+        }
+
+        & p {
+            color: red;
+        }
     }
 }

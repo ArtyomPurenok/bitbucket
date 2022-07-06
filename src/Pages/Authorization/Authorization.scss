@@ -6,23 +6,53 @@
         & h1 {
             text-align: center;
         }
+
+        & button {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            border: none;
+            background-color: transparent;
+            color: rgba(103, 106, 113, 1);
+
+            & svg {
+                width: 20px;
+                height: 16px;
+                margin-right: 10px;
+
+                & path {
+                    fill: rgba(103, 106, 113, 1);
+                }
+            }
+        }
     }
 
     &_main {
-        // background-color: yellow;
         width: 450px;
         margin: 0px auto;
+
+        & a {
+            text-decoration-color: rgba(0, 156, 180, 1);
+        }
 
         &--button {
             width: 100%;
             height: 56px;
+            font-size: 18px;
+            font-weight: 700;
             margin: 20px 0px;
             border-radius: 5px;
             border-color: transparent;
+            color: white;
             background-color: rgba(0, 156, 180, 1);
+
+            &:active {
+                background-color: rgba(0, 156, 180, 0.7);
+            }
         }
 
         &--password-reset {
+            font-size: 16px;
             text-align: center;
             margin: 0px;
             color: rgba(0, 156, 180, 1);
@@ -33,20 +63,29 @@
         display: flex;
         height: 20px;
         margin-top: 20px;
+        font-size: 16px;
         align-items: center;
+        color: rgba(168, 170, 174, 1);
+
+        &--active {
+            background-color: rgba(0, 156, 180, 1) !important;
+            border-color: transparent !important;
+        }
 
         & button {
-            height: 20px;
-            width: 20px;
+            height: 16px;
+            width: 16px;
             margin-right: 10px;
             padding: 0px;
+            border-radius: 2px;
+            border: 2px solid rgb(72, 72, 72);
             background-color: white;
 
             & svg {
                 width: 80%;
 
                 & path {
-                    fill: green;
+                    fill: white;
                 }
             }
         }
@@ -56,12 +95,26 @@
         width: 448px;
         margin: 40px auto;
 
+        & a {
+            text-decoration-color: rgba(77, 77, 79, 1);
+            
+            &:hover {
+                text-decoration-color: rgba(0, 156, 180, 1);
+
+                & p {
+                    color: rgba(0, 156, 180, 1);
+                    border: 2px solid rgba(0, 156, 180, 1);
+                }
+            }
+        }
+
         &--ec, &--msi {
             width: 100%;
             padding: 20px 0px;
+            font-size: 14px;
             text-align: center;
             border: 2px solid rgba(237, 237, 244, 1);
-
+            color: rgba(77, 77, 79, 1);
 
         }
     }
@@ -71,8 +124,33 @@
         margin: 40px auto;
         text-align: center;
 
+        & a {
+            text-decoration-color: rgba(0, 156, 180, 1);
+        }
+
         & p {
             margin: 0px;
+            font-size: 16px;
         }
+
+        & span {
+            color: rgba(0, 156, 180, 1);
+        }
+    }
+
+    &_input-name {
+        display: flex;
+    }
+}
+
+.setOk {
+
+    & input {
+        color: black !important;
+        border: 2px solid rgba(0, 178, 71, 1) !important;
+    }
+
+    & svg path {
+        fill: rgba(0, 178, 71, 1);
     }
 }
