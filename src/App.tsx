@@ -14,7 +14,7 @@ function App() {
       <Header/>
       {/* <PersonalAccountPage/> */}
       {/* <Authorization/> */}
-      {/* <MainPage/> */}
+      <MainPage/>
       <Footer/>
     </div>
   );

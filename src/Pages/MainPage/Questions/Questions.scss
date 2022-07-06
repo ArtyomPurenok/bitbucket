@@ -1,22 +1,49 @@
 .questions {
     padding: 80px 115px;
     display: flex;
+    justify-content: space-between;
+    background-color: rgb(229, 229, 229);
+
+    &_title {
+        
+        & h1 {
+            font-size: 36px;
+            margin: 0px;
+            color: rgba(35, 31, 32, 1);
+        }
+    }
+
+    &_general-box {
+        width: 50%;
+    }
 }
 
 .one, .two, .three, .four, .five, .six, .seven {
+
+    & p {
+        font-size: 18px;
+        color: rgba(103, 106, 113, 1);
+    }
+
     &_button {
-        width: 440px;
         height: 30px;
         margin: 10px 0px;
+        font-size: 18px;
+        font-weight: 700;
         display: flex;
         align-items: center;
         text-align: left;
         border: none;
         background-color: transparent;
+        color: rgba(77, 77, 79, 1);
 
         & svg {
             width: 15px;
             margin: auto 15px;
+
+            & path {
+                fill: rgba(77, 77, 79, 1);
+            }
         }
 
         &-open svg {
@@ -34,31 +61,3 @@
         display: none;
     }
 }
-
-// .two {
-//     &_button {
-//         width: 400px;
-//         height: 30px;
-//         display: flex;
-//         align-items: center;
-
-//         & svg {
-//             width: 15px;
-//             margin: auto 5px;
-//         }
-
-//         &-open svg {
-//             transform: rotate(45deg);
-//         }
-//     }
-
-//     &_open {
-//         padding-left: 50px;
-//         display: block;
-//         width: 400px;
-//     }
-
-//     &_close{
-//         display: none;
-//     }
-// }
