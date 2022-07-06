@@ -1,0 +1,56 @@
+.documents_table {
+    border-collapse: collapse;
+    width: 100%;
+
+    & tr {
+        border-bottom: 1px solid rgba(237, 237, 244, 1);
+    }
+
+    & td {
+        padding: 20px 80px 20px 0px;
+    }
+
+    &--col-category {
+        width: 170px;
+    }
+    &--col-name {
+        width: 390px;
+    }
+
+    &_theab {
+
+        & tr {
+            border-top: 1px solid rgba(237, 237, 244, 1);
+            border-bottom: 1px solid rgba(237, 237, 244, 1);
+        }
+
+        & svg path {
+            fill: rgba(0, 156, 180, 1);
+        }
+
+        & th {
+            font-size: 16px;
+            text-align: left;
+            padding: 20px 80px 20px 0px;
+            color: rgba(0, 156, 180, 1);
+        }
+    }
+
+    &--icon {
+        padding: 0px !important;
+
+        & svg {
+            width: 30px;
+            height: 20px;
+            padding: 0px 5px;
+
+            & path {
+                fill: rgba(0, 156, 180, 1);
+            }
+        }
+    }
+
+    &--save {
+        color: rgba(0, 156, 180, 1);
+    }
+}

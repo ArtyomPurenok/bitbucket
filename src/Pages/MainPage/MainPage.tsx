@@ -12,7 +12,7 @@ export const MainPage = () => {
         {/* <Information/> */}
         {/* <Registries/> */}
         {/* <RegistryNews/> */}
-        {/* <Documents/> */}
-        <Questions/>
+        <Documents/>
+        {/* <Questions/> */}
     </div>
 }

@@ -1,6 +1,9 @@
 import React from "react"
 import './DocumentsTable.scss'
 
+import { ReactComponent as DownloadIcon } from '../../../../components/Icons/UserInterface/DownloadIcon.svg'
+import { ReactComponent as FileIcon } from '../../../../components/Icons/UserInterface/FileIcon.svg'
+
 type docsProps = {
     docsData: any
 }
@@ -15,22 +18,22 @@ export const DocumentsTable = ({docsData}: docsProps) => {
         <td>{el.name}</td>
         <td>{el.date}</td>
         <td>{el.documentsNumber}</td>
-        <td></td>
-        <td>Скачать <br/>({el.size})</td>
+        <td className="documents_table--icon" style={{width: '30px'}}><DownloadIcon/></td>
+        <td className="documents_table--save">Скачать <br/>({el.size})</td>
     </tr>
     })
 
 
     return <table className="documents_table">
 
-        <thead>
+        <thead className="documents_table_theab">
             <tr>
-                <td className="aa">Категория</td>
-                <td className="ab">Наименование </td>
-                <td className="ac">Дата</td>
-                <td className="ad">Номер</td>
-                <td></td>
-                <td className="ae">Содержание</td>
+                <th className="documents_table--col-category">Категория</th>
+                <th className="documents_table--col-name">Наименование </th>
+                <th>Дата</th>
+                <th>Номер</th>
+                <th className="documents_table--icon"><FileIcon/></th>
+                <th>Содержание</th>
             </tr>
         </thead>
 
