@@ -24,6 +24,13 @@ root.render(
             <Route path='/main' element={<MainPage/>}/>
             <Route path='/authorization' element={<Authorization/>}/>
             <Route path='/personalAccount' element={<PersonalAccountPage/>}/>
+            <Route
+            path='*'
+            element={
+              <main style={{padding:'1em'}}>
+                <p>404 Not Found</p>
+              </main>
+            }/>
           </Route>
         </Routes>
       </BrowserRouter>

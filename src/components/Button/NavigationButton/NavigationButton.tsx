@@ -7,12 +7,14 @@ type ButtonProps = {
     onClick?: any
     text?: string
     Icon?: any
-    route?: string | number
+    route: string
 }
 
 export const NavigationButton = ({className, onClick, text, route, Icon}: ButtonProps) => {
-    return <button className={className} onClick={onClick}>
-        {Icon && <Icon height='100%'/>}
-        {text}
-    </button>
+    return <Link to={route}>
+        <button className={className} onClick={onClick}>
+            {Icon && <Icon height='100%'/>}
+            {text}
+        </button>
+    </Link>
 }

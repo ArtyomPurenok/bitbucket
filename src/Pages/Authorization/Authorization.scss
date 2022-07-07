@@ -3,27 +3,46 @@
 
     &_title {
 
-        & h1 {
-            text-align: center;
-        }
+        &--home {
+            width: 110px;
 
-        & button {
-            display: flex;
-            align-items: center;
-            font-size: 18px;
-            border: none;
-            background-color: transparent;
-            color: rgba(103, 106, 113, 1);
+            & a {
+                text-decoration: none;
+            }
 
-            & svg {
-                width: 20px;
-                height: 16px;
-                margin-right: 10px;
-
-                & path {
-                    fill: rgba(103, 106, 113, 1);
+            & button {
+                display: flex;
+                align-items: center;
+                font-size: 18px;
+                border: none;
+                background-color: transparent;
+                color: rgba(103, 106, 113, 1);
+    
+                & svg {
+                    width: 20px;
+                    height: 16px;
+                    margin-right: 10px;
+    
+                    & path {
+                        fill: rgba(103, 106, 113, 1);
+                    }
                 }
             }
+
+            &:hover {
+
+                & button {
+                    color: rgba(103, 106, 113, 0.7);
+                }
+
+                & svg path {
+                    fill: rgba(103, 106, 113, 0.7);
+                }
+            }
+        }
+
+        & h1 {
+            text-align: center;
         }
     }
 

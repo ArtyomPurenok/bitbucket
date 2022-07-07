@@ -17,6 +17,7 @@ export const userDataFetch: any  = createAsyncThunk (
                     country: 'Беларусь',
                     city: 'Минск',
                     mobileNumber: '+375 22 111 33 44',
+                    massage: '4'
                 }
 
             return userData

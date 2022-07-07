@@ -1,10 +1,12 @@
-import React, { useState } from "react"
-import { Button } from "../../components/Button"
+import React, { useEffect, useState } from "react"
 import './Authorization.scss'
 
-import { useDispatch } from "react-redux"
+import { useDispatch, useSelector } from "react-redux"
 import { userDataFetch } from "../../thunkAction/userDataFetch"
+import { useNavigate } from "react-router-dom"
 
+import { Button } from "../../components/Button"
+import { NavigationButton } from "../../components/Button/NavigationButton"
 import { AuthorizationInputs } from "./components/AuthorizationInputs"
 import { ReactComponent as OkIcon } from '../../components/Icons/UserInterface/OkIcon.svg'
 import { ReactComponent as LeftArrowIcon } from '../../components/Icons/UserInterface/LeftArrowIcon.svg'
@@ -13,7 +15,9 @@ import { ReactComponent as RoundTick } from '../../components/Icons/UserInterfac
 
 
 export const Authorization = () => {
+    const registriesData = useSelector((state: any) => state.user.data);
     const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     ////////////////////////
     const [active, setActive] = useState('')
@@ -51,14 +55,11 @@ export const Authorization = () => {
         const formData = {name, password};
    
         if (formData.name === 'Захар' && formData.password === '12345678') {
-            console.log('ok');
             serError('')
             dispatch(userDataFetch())
+            navigate('/main')
         }else {serError('error')}
-
       }
-
-
 
 
     
@@ -67,7 +68,10 @@ export const Authorization = () => {
     return <div className="authorization">
 
         <div className="authorization_title">
-            <Button Icon={LeftArrowIcon} text='Главная'/>
+            <div className="authorization_title--home">
+                <NavigationButton route='/main' Icon={LeftArrowIcon} text='Главная'/>
+            </div>
+
             <h1>Авторизация</h1>
         </div>
 
