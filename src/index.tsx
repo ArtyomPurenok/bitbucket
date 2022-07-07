@@ -1,11 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import './index.css'
+import App from './App'
+import reportWebVitals from './reportWebVitals'
 
 import { Provider } from "react-redux"
 import { store } from "./redux/store"
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+
+import { MainPage } from './Pages/MainPage'
+import { Authorization } from './Pages/Authorization'
+import { PersonalAccountPage } from './Pages/PersonalAccountPage'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,7 +18,15 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={store}>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<App/>}>
+            <Route path='/main' element={<MainPage/>}/>
+            <Route path='/authorization' element={<Authorization/>}/>
+            <Route path='/personalAccount' element={<PersonalAccountPage/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </React.StrictMode>
   </Provider>
 );
