@@ -1,3 +1,5 @@
+@import '../../../../Style/Style';
+
 .authorization-inputs {
 
     &_input-icon {
@@ -25,7 +27,7 @@
         background-color: rgba(246, 246, 249, 1);
 
         &:focus {
-            border: 2px solid rgba(0, 156, 180, 1);
+            border: 2px solid $colorBlue;
             color: black;
         }
     }
@@ -33,12 +35,12 @@
     &_error {
 
         & input {
-            border: 2px solid red;
-            color: red;
+            border: 2px solid $colorRed;
+            color: $colorRed;
         }
 
         & p {
-            color: red;
+            color: $colorRed;
         }
     }
 }

@@ -1,16 +1,18 @@
+@import '../../../../Style/Style';
+
 .registries_table {
     width: 100%;
     border-collapse: collapse;
 
     & tr {
-        border-bottom: 1px solid rgba(237, 237, 244, 1);
+        border-bottom: 1px solid $colorLineTable;
     }
 
     &--address {
         width: 77px;
 
         & a {
-            color: rgba(0, 156, 180, 1);
+            color: $colorBlue;
         }
     }
 
@@ -29,19 +31,19 @@
     & thead {
 
         & tr {
-            border-top: 1px solid rgba(237, 237, 244, 1);
-            border-bottom: 1px solid rgba(237, 237, 244, 1);
+            border-top: 1px solid $colorLineTable;
+            border-bottom: 1px solid $colorLineTable;
         }
 
         & td {
-            font-size: 16px;
+            font-size: $TableTextFS;
             text-align: left;
-            color: rgba(0, 156, 180, 1);
+            color: $colorBlue;
         }
     }
 
     & td {
-        font-size: 16px;
+        font-size: $TableTextFS;
         padding: 20px 0px;
     }
 }

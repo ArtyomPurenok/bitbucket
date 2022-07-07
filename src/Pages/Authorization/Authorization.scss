@@ -1,5 +1,17 @@
+@import '../../Style/Style';
+
+@mixin formForSlice($WD, $HG, $BR, $BC) {
+    width: $WD;
+    height: $HG;
+    border-radius: $BR;
+    background-color: $BC;
+}
+
+
+
+
 .authorization {
-    padding: 80px 115px;
+    padding: $pagePadding;
 
     &_title {
 
@@ -16,7 +28,7 @@
                 font-size: 18px;
                 border: none;
                 background-color: transparent;
-                color: rgba(103, 106, 113, 1);
+                color: $colorText;
     
                 & svg {
                     width: 20px;
@@ -24,7 +36,7 @@
                     margin-right: 10px;
     
                     & path {
-                        fill: rgba(103, 106, 113, 1);
+                        fill: $colorText;
                     }
                 }
             }
@@ -51,19 +63,16 @@
         margin: 0px auto;
 
         & a {
-            text-decoration-color: rgba(0, 156, 180, 1);
+            text-decoration-color: $colorBlue;
         }
 
         &--button {
-            width: 100%;
-            height: 56px;
+            @include formForSlice(100%, 56px, 5px, $colorBlue);
             font-size: 18px;
             font-weight: 700;
             margin: 20px 0px;
-            border-radius: 5px;
             border-color: transparent;
             color: white;
-            background-color: rgba(0, 156, 180, 1);
 
             &:active {
                 background-color: rgba(0, 156, 180, 0.7);
@@ -71,10 +80,10 @@
         }
 
         &--password-reset {
-            font-size: 16px;
+            font-size: $textFS;
             text-align: center;
             margin: 0px;
-            color: rgba(0, 156, 180, 1);
+            color: $colorBlue;
         }
     }
 
@@ -82,23 +91,20 @@
         display: flex;
         height: 20px;
         margin-top: 20px;
-        font-size: 16px;
+        font-size: $textFS;
         align-items: center;
         color: rgba(168, 170, 174, 1);
 
         &--active {
-            background-color: rgba(0, 156, 180, 1) !important;
+            background-color: $colorBlue !important;
             border-color: transparent !important;
         }
 
         & button {
-            height: 16px;
-            width: 16px;
+            @include formForSlice(16px, 16px, 2px, white);
             margin-right: 10px;
             padding: 0px;
-            border-radius: 2px;
             border: 2px solid rgb(72, 72, 72);
-            background-color: white;
 
             & svg {
                 width: 80%;
@@ -115,14 +121,14 @@
         margin: 40px auto;
 
         & a {
-            text-decoration-color: rgba(77, 77, 79, 1);
+            text-decoration-color: $colorTextTable;
             
             &:hover {
-                text-decoration-color: rgba(0, 156, 180, 1);
+                text-decoration-color: $colorBlue;
 
                 & p {
-                    color: rgba(0, 156, 180, 1);
-                    border: 2px solid rgba(0, 156, 180, 1);
+                    color: $colorBlue;
+                    border: 2px solid $colorBlue;
                 }
             }
         }
@@ -132,8 +138,8 @@
             padding: 20px 0px;
             font-size: 14px;
             text-align: center;
-            border: 2px solid rgba(237, 237, 244, 1);
-            color: rgba(77, 77, 79, 1);
+            border: 2px solid $colorLineTable;
+            color: $colorTextTable;
 
         }
     }
@@ -144,16 +150,16 @@
         text-align: center;
 
         & a {
-            text-decoration-color: rgba(0, 156, 180, 1);
+            text-decoration-color: $colorBlue;
         }
 
         & p {
             margin: 0px;
-            font-size: 16px;
+            font-size: $textFS;
         }
 
         & span {
-            color: rgba(0, 156, 180, 1);
+            color: $colorBlue;
         }
     }
 
@@ -166,10 +172,10 @@
 
     & input {
         color: black !important;
-        border: 2px solid rgba(0, 178, 71, 1) !important;
+        border: 2px solid $colorGreen !important;
     }
 
     & svg path {
-        fill: rgba(0, 178, 71, 1);
+        fill: $colorGreen;
     }
 }

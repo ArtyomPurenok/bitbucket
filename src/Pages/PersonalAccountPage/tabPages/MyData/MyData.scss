@@ -1,9 +1,11 @@
+@import '../../../../Style/Style';
+
 .my-data {
 
     &_title {
         display: flex;
         padding-bottom: 36px;
-        border-bottom: 2px solid rgba(237, 237, 244, 1);
+        border-bottom: 2px solid $colorLineTable;
         
         & img {
             border-radius: 50%;
@@ -22,7 +24,7 @@
 
     &_inputs {
         padding: 36px 0px;
-        border-bottom: 2px solid rgba(237, 237, 244, 1);
+        border-bottom: 2px solid $colorLineTable;
 
         & h1 {
             width: 100%;
@@ -38,7 +40,7 @@
 
     &_password {
         padding: 36px 0px;
-        border-bottom: 2px solid rgba(237, 237, 244, 1);
+        border-bottom: 2px solid $colorLineTable;
 
         &--inputs {
             display: flex;
@@ -58,7 +60,7 @@
         font-weight: 700;
         border-radius: 5px;
         border-color: transparent;
-        background-color: rgba(0, 156, 180, 1);
+        background-color: $colorBlue;
         color: white;
 
         &:active {

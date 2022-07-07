@@ -1,5 +1,7 @@
+@import '../../../Style/Style';
+
 .questions {
-    padding: 80px 115px;
+    padding: $pagePadding;
     display: flex;
     justify-content: space-between;
     background-color: rgb(229, 229, 229);
@@ -7,9 +9,9 @@
     &_title {
         
         & h1 {
-            font-size: 36px;
+            font-size: $TitleTextFS;
             margin: 0px;
-            color: rgba(35, 31, 32, 1);
+            color: $colorTitle;
         }
     }
 
@@ -22,7 +24,7 @@
 
     & p {
         font-size: 18px;
-        color: rgba(103, 106, 113, 1);
+        color: $colorText;
     }
 
     &_button {
@@ -35,14 +37,14 @@
         text-align: left;
         border: none;
         background-color: transparent;
-        color: rgba(77, 77, 79, 1);
+        color: $colorTextTable;
 
         & svg {
             width: 15px;
             margin: auto 15px;
 
             & path {
-                fill: rgba(77, 77, 79, 1);
+                fill: $colorTextTable;
             }
         }
 

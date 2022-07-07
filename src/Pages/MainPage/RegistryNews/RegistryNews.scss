@@ -1,5 +1,7 @@
+@import '../../../Style/Style';
+
 .registry-news {
-    padding: 80px 115px;
+    padding: $pagePadding;
     background-color: rgb(229, 229, 229);
 
     &_cards {
@@ -11,7 +13,7 @@
     &_title {
         font-size: 36px;
         margin: 40px 0px;
-        color: rgba(35, 31, 32, 1);
+        color: $colorTitle;
     }
 
     &_pagination {
@@ -22,7 +24,7 @@
             height: 56px;
             border-color: transparent;
             border-radius: 5px;
-            background-color: rgba(0, 156, 180, 1);
+            background-color: $colorBlue;
             color: white;
             font-size: 18px;
             font-weight: 700;

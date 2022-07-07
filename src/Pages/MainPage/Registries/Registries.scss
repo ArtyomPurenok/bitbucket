@@ -1,14 +1,16 @@
+@import '../../../Style/Style';
+
 .registries {
-    padding: 80px 115px;
+    padding: $pagePadding;
 
     &_title {
         display: flex;
         justify-content: space-between;
 
         & h1 {
-            font-size: 36px;
-            color: rgba(35, 31, 32, 1);
-            margin: 40px 0px;
+            font-size: $TitleTextFS;
+            color: $colorTitle;
+            margin: $TitleTextMargin;
         }
     }
 

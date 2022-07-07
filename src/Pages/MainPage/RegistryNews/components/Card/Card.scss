@@ -1,5 +1,7 @@
+@import '../../../../../Style/Style';
+
 .card {
-    width: 370px;
+    width: $cardWidth;
 
     &_title {
         font-size: 18px;
@@ -7,13 +9,12 @@
     }
     
     & img {
-        width: 370px;
-        height: 220px;
+        width: $cardWidth;
+        height: $cardImgHeight;
     }
 
     &_data {
         height: 25px;
-        // background-color: aqua;
         display: flex;
         margin-bottom: 5px;
 
@@ -29,7 +30,6 @@
     }
 
     &_description {
-        // background-color: rgb(54, 252, 93);
         margin-bottom: 40px;
         overflow: hidden;
         display: -webkit-box;

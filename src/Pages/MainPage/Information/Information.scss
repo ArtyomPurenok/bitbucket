@@ -1,3 +1,10 @@
+@import '../../../Style/Style';
+
+@mixin transform($wd, $hg) {
+    width: $wd;
+    height: $hg;
+  }
+
 .information {
     padding: 80px 115px;
     background-color: rgb(229, 229, 229);
@@ -7,8 +14,7 @@
     &_folders-icon {
 
         & svg {
-            width: 505px;
-            height: 502px;
+            @include transform(505px, 502px);
         }
     }
 
@@ -32,7 +38,7 @@
 
             & span {
                 font-weight: 600;
-                color: rgba(0, 156, 180, 1);
+                color: $colorBlue;
             }
 
             & p {
@@ -76,7 +82,7 @@
             padding: 0px;
             border: transparent;
             border-radius: 0px 5px 5px 0px;
-            background: rgba(0, 156, 180, 1);
+            background: $colorBlue;
             color: white;
 
             &:active {

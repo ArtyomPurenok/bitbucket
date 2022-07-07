@@ -1,5 +1,7 @@
+@import '../../Style/Style';
+
 .personal-account {
-    padding: 80px 115px;
+    padding: $pagePadding;
 
     &_title {
 
@@ -22,10 +24,10 @@
         &--button-down {
             border-bottom-left-radius: 5px;
             border-bottom-right-radius: 5px;
-            color: red !important;
+            color: $colorRed !important;
 
             & svg path {
-                fill: red;
+                fill: $colorRed;
             }
         }
 
@@ -35,8 +37,8 @@
             font-size: 18px;
             display: flex;
             align-items: center;
-            border: 1px solid rgb(237, 237, 244);
-            color: rgba(103, 106, 113, 1);
+            border: 1px solid $colorLineTable;
+            color: $colorText;
             background-color: transparent;
 
             &:hover {
@@ -57,11 +59,11 @@
 }
 
 .tabs-button-active {
-    border-color: rgba(0, 156, 180, 1) !important;
+    border-color: $colorBlue !important;
     border-radius: 5px !important;
-    color: rgba(0, 156, 180, 1) !important;
+    color: $colorBlue !important;
 
     & svg path {
-        fill: rgba(0, 156, 180, 1);
+        fill: $colorBlue;
     }
 }

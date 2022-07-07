@@ -1,9 +1,11 @@
+@import '../../../../Style/Style';
+
 .documents_table {
-    border-collapse: collapse;
     width: 100%;
+    border-collapse: collapse;
 
     & tr {
-        border-bottom: 1px solid rgba(237, 237, 244, 1);
+        border-bottom: 1px solid $colorLineTable;
     }
 
     & td {
@@ -20,19 +22,19 @@
     &_theab {
 
         & tr {
-            border-top: 1px solid rgba(237, 237, 244, 1);
-            border-bottom: 1px solid rgba(237, 237, 244, 1);
+            border-top: 1px solid $colorLineTable;
+            border-bottom: 1px solid $colorLineTable;
         }
 
         & svg path {
-            fill: rgba(0, 156, 180, 1);
+            fill: $colorBlue;
         }
 
         & th {
             font-size: 16px;
             text-align: left;
             padding: 20px 80px 20px 0px;
-            color: rgba(0, 156, 180, 1);
+            color: $colorBlue;
         }
     }
 
@@ -45,12 +47,12 @@
             padding: 0px 5px;
 
             & path {
-                fill: rgba(0, 156, 180, 1);
+                fill: $colorBlue;
             }
         }
     }
 
     &--save {
-        color: rgba(0, 156, 180, 1);
+        color: $colorBlue;
     }
 }

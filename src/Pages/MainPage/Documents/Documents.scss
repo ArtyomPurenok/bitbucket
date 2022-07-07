@@ -1,5 +1,7 @@
+@import '../../../Style/Style';
+
 .documents {
-    padding: 80px 115px;
+    padding: $pagePadding;
 
     &_title {
         margin-bottom: 40px;
@@ -7,17 +9,17 @@
         & h1 {
             font-size: 36px;
             margin: 10px 0px;
-            color: rgba(35, 31, 32, 1);
+            color: $colorTitle;
         }
 
         & p {
             font-size: 18px;
             margin: 0px;
-            color: rgba(77, 77, 79, 1);
+            color: $colorTextTable;
         }
 
         & span {
-            color: rgba(0, 156, 180, 1);
+            color: $colorBlue;
         }
     }
 }

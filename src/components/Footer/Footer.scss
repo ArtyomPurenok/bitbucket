@@ -1,5 +1,26 @@
+@import '../../Style/Style';
+
+%styleForTitle {
+    font-size: 18px;
+    padding-bottom: 5px;
+    color: $colorTitle;
+  }
+
+%styleForText {
+font-size: 14px;
+margin: 5px 0px;
+color: $colorTextTable;
+}
+
+@mixin FS-Color($FS, $Color) {
+font-size: $FS;
+color: $Color; 
+}
+
+
+
 .footer {
-    padding: 80px 115px;
+    padding: $pagePadding;
 
     &_data {
         display: flex;
@@ -14,26 +35,22 @@
         }
 
         &--information {
-            font-size: 14px;
-            color: rgba(103, 106, 113, 1);
+            @include FS-Color(14px, $colorText);
         }
     }
 
     &_developer {
 
         & h1 {
-            font-size: 16px;
-            color: rgba(77, 77, 79, 1);           
+            @include FS-Color(16px, $colorTextTable);          
         }
 
         &--name {
-            font-size: 14px;
-            color: rgba(103, 106, 113, 1);
+            @include FS-Color(14px, $colorText);   
         }
 
         &--address {
-            font-size: 14px;
-            color: rgba(168, 170, 174, 1);
+            @include FS-Color(14px, rgba(168, 170, 174, 1));  
         }
     }
 
@@ -42,22 +59,19 @@
         flex-direction: column;
 
         & button {
-            font-size: 14px;
+            @include FS-Color(14px, $colorTextTable); 
             text-align: left;
             border: none;
             background-color: transparent;
             padding: 5px 0px;
-            color: rgba(77, 77, 79, 1);
 
             &:hover {
-                color: rgb(0, 0, 0);
+                color: black;
             }
         }
 
         & h1 {
-            font-size: 18px;
-            padding-bottom: 5px;
-            color: rgba(35, 31, 32, 1);
+            @extend %styleForTitle;
         }
 
     }
@@ -65,43 +79,34 @@
     &_support {
 
         & h1 {
-            font-size: 18px;
-            padding-bottom: 5px;
-            color: rgba(35, 31, 32, 1);
+            @extend %styleForTitle;
         }
 
         & p {
-            font-size: 14px;
-            color: rgba(77, 77, 79, 1);
-            margin: 5px 0px;
+            @extend %styleForText;
         }
 
         &--work-time {
             width: 270px;
             padding-bottom: 10px;
-            border-bottom: 1px solid rgba(237, 237, 244, 1);
-            color: rgba(103, 106, 113, 1) !important;
+            border-bottom: 1px solid $colorLineTable;
+            color: $colorText !important;
         }
     }
 
     &_contacts {
 
         & h1 {
-            font-size: 18px;
-            padding-bottom: 5px;
-            color: rgba(35, 31, 32, 1);
+            @extend %styleForTitle;
         }
 
         & p {
-            font-size: 14px;
-            margin: 5px 0px;
-            color: rgba(77, 77, 79, 1);
+            @extend %styleForText;
         }
 
         & a {
-            font-size: 14px;
+            @include FS-Color(14px, $colorBlue); 
             padding: 5px 0px;
-            color: rgba(0, 156, 180, 1);
         }
     }
 
