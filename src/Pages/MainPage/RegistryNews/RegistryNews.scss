@@ -10,6 +10,8 @@
 
     &_title {
         font-size: 36px;
+        margin: 40px 0px;
+        color: rgba(35, 31, 32, 1);
     }
 
     &_pagination {
@@ -26,7 +28,7 @@
             font-weight: 700;
 
             &:active {
-                background-color: rgba(0, 156, 180, 0.671);
+                background-color: rgba(0, 156, 180, 0.7);
             }
         }
     }

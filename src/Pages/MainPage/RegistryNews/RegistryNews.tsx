@@ -8,7 +8,7 @@ import { Button } from "../../../components/Button";
 
 
 export const RegistryNews = () => {
-    const registriesData = useSelector((state: any) => state.news);  //убрать
+    const registriesData = useSelector((state: any) => state.news);
     const dispatch = useDispatch();
 
     const [cards, setCards] = useState('No Content')

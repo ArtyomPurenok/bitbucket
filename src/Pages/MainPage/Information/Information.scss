@@ -4,16 +4,44 @@
     display: flex;
     justify-content: space-between;
 
+    &_folders-icon {
+
+        & svg {
+            width: 505px;
+            height: 502px;
+        }
+    }
+
     &_description {
         width: 450px;
+        
+        & p {
+            font-size: 18px;
+        }
 
-        // &--data-register {          заполнить
+        &--title {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: rgba(35, 31, 32, 1);
 
-        // }
+
+        }
+
+        &--register {
+            margin: 20px 0px;
+
+            & span {
+                font-weight: 600;
+                color: rgba(0, 156, 180, 1);
+            }
+
+            & p {
+                margin: 0px;
+            }
+        }
     }
 
     &_search {
-        width: 330px;
         height: 56px;
         display: flex;
         background-color: white;
@@ -21,18 +49,26 @@
         & svg {
             width: 24px;
             height: 24px;
-            margin: auto 5px;
+            margin: 16px 10px 16px 15px;
+
+            & path {
+                fill: rgba(198, 198, 198, 1);
+            }
         }
 
         & input {
-            width: 100%;
-            // height: 20px;
-            margin: auto;
+            font-size: 14px;
+            width: 305px;
+            outline: none;
+            border: none;
         }
 
         &--button {
             width: 120px;
-            height: 56px;
+            height: 100%;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 0px;
             border: none;
             background: rgba(0, 156, 180, 1);
             color: white;
