@@ -1,12 +1,47 @@
 .registries_table {
+    width: 100%;
+    border-collapse: collapse;
+
+    & tr {
+        border-bottom: 1px solid rgba(237, 237, 244, 1);
+    }
+
+    &--address {
+        width: 77px;
+
+        & a {
+            color: rgba(0, 156, 180, 1);
+        }
+    }
+
+    & svg {
+        width: 15px;
+        height: 25px;
+        margin: 0px 10px;
+    }
 
     & button {
-        width: 20px;
+        padding: 0px;
+        border: none;
+        background-color: transparent;
     }
-    & th {
-        border: 1px solid black;
+
+    & thead {
+
+        & tr {
+            border-top: 1px solid rgba(237, 237, 244, 1);
+            border-bottom: 1px solid rgba(237, 237, 244, 1);
+        }
+
+        & td {
+            font-size: 16px;
+            text-align: left;
+            color: rgba(0, 156, 180, 1);
+        }
     }
+
     & td {
-        border: 1px solid green;
+        font-size: 16px;
+        padding: 20px 0px;
     }
 }

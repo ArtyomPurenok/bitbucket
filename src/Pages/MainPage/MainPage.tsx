@@ -9,8 +9,8 @@ import { Questions } from "./Questions"
 
 export const MainPage = () => {
     return <div className="main">
-        <Information/>
-        {/* <Registries/> */}
+        {/* <Information/> */}
+        <Registries/>
         {/* <RegistryNews/> */}
         {/* <Documents/> */}
         {/* <Questions/> */}

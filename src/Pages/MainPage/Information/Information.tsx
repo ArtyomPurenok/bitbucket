@@ -33,8 +33,10 @@ export const Information = () => {
             </div>
 
             <div className="information_search">
-                <SearchIcon/>
-                <Input placeholder="Искать реестр...~"/>
+                <div className="information_search--icon">
+                    <SearchIcon/>
+                </div>
+                <Input placeholder="Искать реестр..."/>
                 <Button className="information_search--button" text="Искать"/>
             </div>
         </div>

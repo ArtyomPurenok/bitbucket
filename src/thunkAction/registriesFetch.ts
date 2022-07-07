@@ -1,12 +1,12 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
 
 export const registryFetch: any  = createAsyncThunk (
-    'Data from serwer',
-    async () => {
+    'Data table from server',
+    async (pageNumber) => {
 
         try {
             
-            const response = await fetch('https://omdbapi.com/?apikey=ed02d785&s=star'); //url взят с дипломной работы для ошибки 200
+            const response = await fetch(`https://studapi.teachmeskills.by/blog/posts/${pageNumber}`); //url взят со свагера школы для ошибки 200
             const dataFromServer = await response.json();
             
             const datatable = [
@@ -88,46 +88,6 @@ export const registryFetch: any  = createAsyncThunk (
                     classCode: '04.03',
                     softwareClass: 'Системы сбора, хранения, обработки, анализа, моделирования и визуализации массивов данных',
                     registrationDate: '14.03.2016',
-                    url: 'https://www.google.com/',
-                },
-                {
-                    registrationNumber: '#11',
-                    name: 'Система управления базами данных «Ред База Данных»',
-                    classCode: '02.09',
-                    softwareClass: 'Системы управления базами данных',
-                    registrationDate: '29.01.2016',
-                    url: 'https://www.google.com/',
-                },
-                {
-                    registrationNumber: '#12',
-                    name: '1С:Школа. Информатика, 11 класс',
-                    classCode: '04.11',
-                    softwareClass: 'Системы управления  процессами  организации',
-                    registrationDate: '29.01.2016',
-                    url: 'https://www.google.com/',
-                },
-                {
-                    registrationNumber: '#13',
-                    name: '1С:Школа. Русский язык, 5–6 класс. Лексикология',
-                    classCode: '04.11',
-                    softwareClass: 'Информационные системы для решения специфических отраслевых задач',
-                    registrationDate: '29.01.2016',
-                    url: 'https://www.google.com/',
-                },
-                {
-                    registrationNumber: '#14',
-                    name: '1С:Комплексная автоматизация 8',
-                    classCode: '04.11',
-                    softwareClass: 'Системы управления процессами организации',
-                    registrationDate: '20.02.2016',
-                    url: 'https://www.google.com/',
-                },
-                {
-                    registrationNumber: '#15',
-                    name: 'Электронный периодический справочник "Система ГАРАНТ"',
-                    classCode: '04.15',
-                    softwareClass: 'Прикладное программное обеспечение общего назначения',
-                    registrationDate: '20.02.2016',
                     url: 'https://www.google.com/',
                 },
             ]

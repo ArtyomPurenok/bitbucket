@@ -4,5 +4,47 @@
     &_title {
         display: flex;
         justify-content: space-between;
+
+        & h1 {
+            font-size: 36px;
+            color: rgba(35, 31, 32, 1);
+            margin: 40px 0px;
+        }
+    }
+
+    &_filter {
+        display: flex;
+        margin: 40px 0px;
+
+        &-button {
+            margin: 0px 10px;
+            border: none;
+            background-color: transparent;
+        }
+
+        & svg {
+            width: 26px;
+            height: 24px;
+        }
+    }
+
+    &_pagination {
+        margin: 40px;
+        text-align: center;
+
+        &--button {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            font-weight: 700;
+            border-radius: 2px;
+            border-color: transparent;
+            background-color: transparent;
+
+            &-active {
+                color: white;
+                background-color: rgba(0, 156, 180, 1);
+            }
+        }
     }
 }

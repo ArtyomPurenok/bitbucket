@@ -1,5 +1,7 @@
 import './CreatingTable.scss'
-import { Button } from "../../../../components/Button";
+import { Button } from "../../../../components/Button"
+
+import { ReactComponent as DoubleArrowIcon } from '../../../../components/Icons/UserInterface/DoubleArrowIcon.svg'
 
 type Props = {
     data: any
@@ -13,13 +15,13 @@ export const CreatingTable = ({data}: Props) => {
         }
         return <tr>
             <td></td>
-            <td className="registries_table--shift">{el.registrationNumber}</td>
+            <td>{el.registrationNumber}</td>
             <td></td>
-            <td className="registries_table--shift">{el.name}</td>
+            <td>{el.name}</td>
             <td>{el.classCode}</td>
             <td>{el.softwareClass}</td>
             <td>{el.registrationDate}</td>
-            <td>{el.url}</td>
+            <td className='registries_table--address'><a href={el.url}>Ссылка</a></td>
         </tr>
     })
     
@@ -28,14 +30,14 @@ export const CreatingTable = ({data}: Props) => {
 
         <thead>
             <tr>
-                <td><Button/></td>
-                <th>Регистрационный номер</th>
-                <td><Button/></td>
-                <th>Наименование программного обеспечения</th>
-                <th>Код класса</th>
-                <th>Класс программного обеспечения</th>
-                <th>Дата регистрации</th>
-                <th>Адрес сайта</th>
+                <td><Button Icon={DoubleArrowIcon}/></td>
+                <td>Регистрационный номер</td>
+                <td><Button Icon={DoubleArrowIcon}/></td>
+                <td>Наименование программного обеспечения</td>
+                <td>Код класса</td>
+                <td>Класс программного обеспечения</td>
+                <td>Дата регистрации</td>
+                <td className='registries_table--address'>Адрес сайта</td>
             </tr>
         </thead>
 
