@@ -86,7 +86,7 @@ export const Authorization = () => {
                 <div className="authorization_input-name">
                 <AuthorizationInputs className={passwordOk && 'setOk'} error={error && 'error'} Icon={passwordOk && RoundTick} name='Пароль' placeholder="Введите пароль  (12345678)" type='password' onChange={onPasswordChange}/>
                 </div>
-                {error && <p>Неверный логин или пароль</p>}
+                {error && <p className="authorization_input-name--error">Неверный логин или пароль</p>}
             </form>
 
             <div className="authorization_memory">
